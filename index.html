@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Davis Designs (JDD) - Bold Custom T-Shirts & Wearable Art</title>
+    <meta name="description" content="Discover unique custom t-shirts by Justin Davis Designs. Bold libertarian, gothic, and artistic designs on quality apparel. Express yourself with wearable art.">
+    <meta name="keywords" content="custom t-shirts, libertarian shirts, gothic designs, wearable art, political shirts, unique apparel, Justin Davis Designs">
+    <meta name="author" content="Justin Davis">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jddesigns.ink/">
+    <meta property="og:title" content="Justin Davis Designs - Bold Custom T-Shirts & Wearable Art">
+    <meta property="og:description" content="Discover unique custom t-shirts featuring bold libertarian, gothic, and artistic designs. Express yourself with wearable art.">
+    <meta property="og:image" content="https://jddesigns.ink/design%20images/nomasters.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://jddesigns.ink/">
+    <meta property="twitter:title" content="Justin Davis Designs - Bold Custom T-Shirts & Wearable Art">
+    <meta property="twitter:description" content="Discover unique custom t-shirts featuring bold libertarian, gothic, and artistic designs. Express yourself with wearable art.">
+    <meta property="twitter:image" content="https://jddesigns.ink/design%20images/nomasters.png">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Justin Davis Designs",
+        "alternateName": "JDD",
+        "description": "Custom t-shirt design studio specializing in bold libertarian, gothic, and artistic wearable art",
+        "url": "https://jddesigns.ink",
+        "logo": "https://jddesigns.ink/design%20images/nomasters.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "info@jddesigns.ink",
+            "contactType": "customer service"
+        },
+        "sameAs": [],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "T-Shirt Designs",
+            "itemListElement": [
+                {
+                    "@type": "Product",
+                    "name": "Question Rothbard Everything",
+                    "description": "Bold libertarian statement tee featuring economic philosopher Murray Rothbard",
+                    "image": "https://jddesigns.ink/design%20images/86158c2f-4ae6-488c-9757-d0afb465ed58.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "24.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock"
+                    }
+                },
+                {
+                    "@type": "Product",
+                    "name": "No Masters, No Slaves",
+                    "description": "Bold anarchist statement with coiled serpent - Live Free or Die",
+                    "image": "https://jddesigns.ink/design%20images/nomasters.png",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "27.99",
+                        "priceCurrency": "USD",
+                        "availability": "https://schema.org/InStock"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Courier+Prime:wght@400;700&family=Rock+Salt&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #1a1a1a;
+            color: #e6e6e6;
+            font-family: 'Courier Prime', monospace;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(255, 107, 107, 0.1) 0%, transparent 60%),
+                radial-gradient(circle at 80% 70%, rgba(51, 51, 51, 0.2) 0%, transparent 60%);
+        }
+        .noise-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: -1;
+            animation: drift 20s linear infinite;
+        }
+        @keyframes drift {
+            0% { transform: translate(0px, 0px); }
+            25% { transform: translate(2px, -2px); }
+            50% { transform: translate(-1px, 2px); }
+            75% { transform: translate(1px, 1px); }
+            100% { transform: translate(0px, 0px); }
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(26, 26, 26, 0.7), rgba(45, 45, 45, 0.8)), url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 107, 107, 0.05) 0%, transparent 70%);
+            animation: rotate-slow 30s linear infinite;
+            z-index: -1;
+        }
+        @keyframes rotate-slow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .band-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: clamp(4rem, 15vw, 12rem);
+            color: #fff;
+            text-shadow: 3px 3px 0px #ff6b6b, 6px 6px 0px #333, 0 0 30px rgba(255, 107, 107, 0.5);
+            transform: rotate(-2deg);
+            margin-bottom: 2rem;
+            letter-spacing: 0.1em;
+            animation: subtle-shake 6s ease-in-out infinite;
+            position: relative;
+        }
+        @keyframes subtle-shake {
+            0%, 100% { transform: rotate(-2deg) translate(0px, 0px); }
+            25% { transform: rotate(-1.8deg) translate(1px, -1px); }
+            50% { transform: rotate(-2.2deg) translate(-1px, 1px); }
+            75% { transform: rotate(-1.9deg) translate(1px, 0px); }
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            border: 2px solid #ff6b6b;
+            padding: 12px 25px;
+            background: rgba(255, 107, 107, 0.1);
+            transform: rotate(1deg);
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+            backdrop-filter: blur(5px);
+            animation: glow-pulse 4s ease-in-out infinite alternate;
+        }
+        @keyframes glow-pulse {
+            0% { box-shadow: 0 0 20px rgba(255, 107, 107, 0.3); }
+            100% { box-shadow: 0 0 30px rgba(255, 107, 107, 0.6); }
+        }
+        .distressed-line {
+            width: 80%;
+            height: 3px;
+            background: #ff6b6b;
+            margin: 3rem 0;
+            position: relative;
+        }
+        .distressed-line::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: 20%;
+            width: 60%;
+            height: 5px;
+            background: #333;
+            transform: skewX(-10deg);
+        }
+        nav {
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        nav.sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            justify-content: center;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+            border-bottom: 2px solid #ff6b6b;
+        }
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+            font-size: 1.5rem;
+            padding: 10px;
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid #ff6b6b;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .cart-icon:hover {
+            background: rgba(255, 107, 107, 0.2);
+            transform: scale(1.05);
+        }
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #ff6b6b;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart-content {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            border: 3px solid #ff6b6b;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #444;
+            padding-bottom: 1rem;
+        }
+        .cart-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: #ff6b6b;
+        }
+        .cart-close {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid #444;
+        }
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .cart-item-info {
+            flex: 1;
+        }
+        .cart-item-name {
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 0.25rem;
+        }
+        .cart-item-details {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        .cart-item-price {
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        .cart-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .qty-btn {
+            background: #ff6b6b;
+            border: none;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .cart-empty {
+            text-align: center;
+            color: #ccc;
+            padding: 2rem;
+        }
+        .cart-total {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px solid #ff6b6b;
+            text-align: right;
+        }
+        .cart-total-amount {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+        }
+        .checkout-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff5252);
+            border: none;
+            color: #fff;
+            padding: 12px 25px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .checkout-btn:hover {
+            background: linear-gradient(45deg, #ff5252, #ff6b6b);
+            transform: translateY(-2px);
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 315px;
+            margin: 1rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .video-message {
+            text-align: center;
+            color: #ff6b6b;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .cart-content.checkout-mode {
+            max-width: 600px;
+            max-height: 90vh;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            border: 1px solid #ff6b6b;
+            background: rgba(255, 107, 107, 0.1);
+            transform: scale(1.05) rotate(-1deg);
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.4);
+            text-shadow: 0 0 10px rgba(255, 107, 107, 0.8);
+        }
+        .content-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+            color: #ff6b6b;
+            margin-bottom: 2rem;
+            transform: rotate(-1deg);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .photo-card {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            border: 3px solid #444;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: rotate(0.5deg);
+            transition: all 0.4s ease;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+        .photo-card:nth-child(even) {
+            transform: rotate(-0.5deg);
+        }
+        .photo-card:hover {
+            transform: rotate(0deg) scale(1.05);
+            border-color: #ff6b6b;
+            box-shadow: 0 0 30px rgba(255, 107, 107, 0.4);
+        }
+        .photo-placeholder {
+            height: 200px;
+            background: linear-gradient(45deg, #333, #222);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .photo-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 107, 0.1), transparent);
+            animation: photo-shimmer 3s ease-in-out infinite;
+        }
+        @keyframes photo-shimmer {
+            0% { left: -100%; }
+            50% { left: 100%; }
+            100% { left: 100%; }
+        }
+        .photo-caption {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        .photo-title {
+            font-family: 'Rock Salt', cursive;
+            font-size: 1.1rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+        }
+        .photo-description {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+        .product-options {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            justify-content: center;
+        }
+        .option-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .option-group label {
+            font-size: 0.8rem;
+            color: #ff6b6b;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .size-select, .color-select {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            color: #fff;
+            padding: 5px 8px;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+        .size-select:focus, .color-select:focus {
+            outline: none;
+            border-color: #ff6b6b;
+        }
+        .product-price {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.3rem;
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .merch-item {
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            border: 2px solid #444;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transform: rotate(0.5deg);
+            transition: all 0.4s ease;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .merch-item:nth-child(even) {
+            transform: rotate(-0.5deg);
+        }
+        .merch-item:hover {
+            transform: rotate(0deg) scale(1.05);
+            border-color: #ff6b6b;
+            box-shadow: 0 0 25px rgba(255, 107, 107, 0.4);
+        }
+        .merch-item::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, transparent, rgba(255, 107, 107, 0.1), transparent);
+            border-radius: 12px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .merch-item:hover::before {
+            opacity: 1;
+        }
+        .merch-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        .merch-name {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 0 10px rgba(255, 107, 107, 0.4);
+        }
+        .merch-description {
+            color: #ccc;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        .merch-price {
+            font-family: 'Courier Prime', monospace;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .buy-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff5252);
+            border: none;
+            color: #fff;
+            padding: 12px 25px;
+            font-family: 'Courier Prime', monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .buy-btn:hover {
+            background: linear-gradient(45deg, #ff5252, #ff6b6b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+        .buy-btn:active {
+            transform: translateY(0px);
+        }
+        .ripped-edge {
+            position: relative;
+            margin: 3rem 0;
+            height: 20px;
+            background: #ff6b6b;
+            clip-path: polygon(0 0, 100% 0, 98% 100%, 95% 80%, 90% 100%, 85% 70%, 80% 100%, 75% 60%, 70% 100%, 65% 90%, 60% 100%, 55% 75%, 50% 100%, 45% 85%, 40% 100%, 35% 95%, 30% 100%, 25% 80%, 20% 100%, 15% 90%, 10% 100%, 5% 85%, 0 100%);
+        }
+        .about-content {
+            margin-top: 2rem;
+        }
+        .band-bio {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            font-style: italic;
+            color: #ddd;
+            text-align: center;
+        }
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #2d2d2d, #1a1a1a);
+            padding: 3rem;
+            border: 3px solid #444;
+            border-radius: 15px;
+            box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.5);
+            transform: rotate(-0.5deg);
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-container::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(45deg, #ff6b6b, #333, #ff6b6b, #333);
+            background-size: 200% 200%;
+            border-radius: 18px;
+            z-index: -1;
+            animation: border-flow 4s ease-in-out infinite;
+        }
+        @keyframes border-flow {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        .form-label {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.2rem;
+            color: #ff6b6b;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .form-input,
+        .form-textarea {
+            background: #1a1a1a;
+            border: 2px solid #444;
+            border-radius: 5px;
+            padding: 12px 16px;
+            color: #fff;
+            font-family: 'Courier Prime', monospace;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #ff6b6b;
+            box-shadow: 0 0 15px rgba(255, 107, 107, 0.3);
+            background: #222;
+        }
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+            font-family: 'Courier Prime', monospace;
+        }
+        .submit-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff5252);
+            border: none;
+            color: #fff;
+            padding: 15px 40px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+            margin-top: 1rem;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(45deg, #ff5252, #ff6b6b);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+        }
+        .submit-btn:active {
+            transform: translateY(-1px);
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #444;
+        }
+        .contact-info p {
+            color: #ccc;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+        .contact-email {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Courier Prime', monospace;
+        }
+        .contact-email:hover {
+            text-shadow: 0 0 10px rgba(255, 107, 107, 0.8);
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                bottom: 30px;
+            }
+            .content-section {
+                padding: 2rem 1rem;
+            }
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            .merch-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-container {
+                padding: 2rem;
+                transform: rotate(0deg);
+            }
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise-bg"></div>
+    <header>
+    <h1 class="band-name" style="font-family: 'Bebas Neue', cursive;">JUSTIN DAVIS DESIGNS</h1>
+        <p class="tagline">Bold • Unique • Wearable Art</p>
+        <div class="distressed-line"></div>
+        <nav>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <div class="cart-icon" onclick="toggleCart()">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </nav>
+    </header>
+    <div class="ripped-edge"></div>
+    <section id="gallery" class="content-section">
+        <h2>Design Gallery</h2>
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="design images/86158c2f-4ae6-488c-9757-d0afb465ed58.png" alt="Question Rothbard Everything" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Question Rothbard Everything</div>
+                    <div class="photo-description">Bold libertarian statement tee featuring economic philosopher Murray Rothbard</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$24.99</div>
+                    <button class="buy-btn" onclick="addToCart('Question Rothbard Everything', 24.99, 'design images/86158c2f-4ae6-488c-9757-d0afb465ed58.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/a81fb0c0-be8c-4e83-aae1-989705b9dc5b.png" alt="Question Authority" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Question Authority</div>
+                    <div class="photo-description">Classic anti-establishment design with founding father imagery</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$24.99</div>
+                    <button class="buy-btn" onclick="addToCart('Question Authority', 24.99, 'design images/a81fb0c0-be8c-4e83-aae1-989705b9dc5b.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/e2a68b17-feb5-4186-b558-e7c274475c00.png" alt="Skull Design" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Memento Mori</div>
+                    <div class="photo-description">Dark gothic skull design with intricate detailing</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Memento Mori', 26.99, 'design images/e2a68b17-feb5-4186-b558-e7c274475c00.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/fdf4dc8a-0faa-42b9-8d6a-f433b19b12bf.png" alt="Dragon Design" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Dragon Wisdom</div>
+                    <div class="photo-description">Mystical dragon design with eastern philosophy influence</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Dragon Wisdom', 26.99, 'design images/fdf4dc8a-0faa-42b9-8d6a-f433b19b12bf.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/feeb9f3c-7450-462f-97ad-815ff0d53801.png" alt="Serpent Design" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Ancient Serpent</div>
+                    <div class="photo-description">Mystical serpent design with occult symbolism</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$25.99</div>
+                    <button class="buy-btn" onclick="addToCart('Ancient Serpent', 25.99, 'design images/feeb9f3c-7450-462f-97ad-815ff0d53801.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/nomasters.png" alt="No Masters Design" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">No Masters, No Slaves</div>
+                    <div class="photo-description">Bold anarchist statement with coiled serpent - "Live Free or Die"</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$27.99</div>
+                    <button class="buy-btn" onclick="addToCart('No Masters, No Slaves', 27.99, 'design images/nomasters.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/my_guy_mug.png" alt="My Guy Mug" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">My Guy Mug</div>
+                    <div class="photo-description">"Not to brag... but my guy has won EVERY election" - Perfect for coffee and political victories</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="11oz" selected>11oz</option>
+                                <option value="15oz">15oz</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Style:</label>
+                            <select class="color-select">
+                                <option value="ceramic" selected>Ceramic</option>
+                                <option value="travel">Travel Mug</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$18.99</div>
+                    <button class="buy-btn" onclick="addToCart('My Guy Mug', 18.99, 'design images/my_guy_mug.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/my_guy.png" alt="My Guy Shirt" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">My Guy</div>
+                    <div class="photo-description">"Not to brag... but my guy has won EVERY election" - Political victory tee</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$24.99</div>
+                    <button class="buy-btn" onclick="addToCart('My Guy', 24.99, 'design images/my_guy.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_Ron_Paul_--sref_httpss.mj.run0_2qCQDrk2E_--v_7_57ec2adc-54e8-4007-9dd1-7a8f76ee7264_3.png" alt="Ron Paul Revolution" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Ron Paul Revolution</div>
+                    <div class="photo-description">Champion of liberty and constitutional government - Dr. Ron Paul design</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Ron Paul Revolution', 26.99, 'design images/u8271597134_Ron_Paul_--sref_httpss.mj.run0_2qCQDrk2E_--v_7_57ec2adc-54e8-4007-9dd1-7a8f76ee7264_3.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_f.a._hayek_--sref_httpss.mj.runsOUOmlv4Mi8_--v_7_f9ccfdcf-dc30-493b-ad1a-3faece0cd9c1_2.png" alt="F.A. Hayek" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">F.A. Hayek</div>
+                    <div class="photo-description">Nobel Prize winning economist and philosopher of freedom</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('F.A. Hayek', 26.99, 'design images/u8271597134_f.a._hayek_--sref_httpss.mj.runsOUOmlv4Mi8_--v_7_f9ccfdcf-dc30-493b-ad1a-3faece0cd9c1_2.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_ludwig_von_mises_--sref_httpss.mj.run6OYY9jUT9S8__efedbaf4-465d-4f61-8e18-5f7b78d8f26e_0.png" alt="Ludwig von Mises" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Ludwig von Mises</div>
+                    <div class="photo-description">Austrian School economist and defender of free markets</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Ludwig von Mises', 26.99, 'design images/u8271597134_ludwig_von_mises_--sref_httpss.mj.run6OYY9jUT9S8__efedbaf4-465d-4f61-8e18-5f7b78d8f26e_0.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_murray_rothbard_--sref_httpss.mj.runtedxB-EKKWk_-_48958c86-382d-46ab-a6d6-725bfcc8204c_1.png" alt="Murray Rothbard" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Murray Rothbard</div>
+                    <div class="photo-description">Anarcho-capitalist philosopher and Austrian economist</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Murray Rothbard', 26.99, 'design images/u8271597134_murray_rothbard_--sref_httpss.mj.runtedxB-EKKWk_-_48958c86-382d-46ab-a6d6-725bfcc8204c_1.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_thomas_sowell_--sref_httpss.mj.runDLBsYp4NYbQ_--v_61998844-cea4-4e89-8472-a98db75e5ff1_2.png" alt="Thomas Sowell" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Thomas Sowell</div>
+                    <div class="photo-description">Renowned economist and social theorist</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$26.99</div>
+                    <button class="buy-btn" onclick="addToCart('Thomas Sowell', 26.99, 'design images/u8271597134_thomas_sowell_--sref_httpss.mj.runDLBsYp4NYbQ_--v_61998844-cea4-4e89-8472-a98db75e5ff1_2.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_albert_einstein_--sref_httpss.mj.runiblNTUbmIaI_-_50d591f6-dc6e-41cb-89b2-000950568a10_1.png" alt="Albert Einstein" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Einstein</div>
+                    <div class="photo-description">Genius physicist and free thinker</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$24.99</div>
+                    <button class="buy-btn" onclick="addToCart('Einstein', 24.99, 'design images/u8271597134_albert_einstein_--sref_httpss.mj.runiblNTUbmIaI_-_50d591f6-dc6e-41cb-89b2-000950568a10_1.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_gadsden_flag_--sref_httpss.mj.run4uJjUI0-kCE_--v__9b3e51c6-3946-4dae-90db-3f8715ffa1e8_2.png" alt="Gadsden Flag" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Don't Tread On Me</div>
+                    <div class="photo-description">Classic Gadsden Flag - symbol of American liberty and resistance</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$25.99</div>
+                    <button class="buy-btn" onclick="addToCart('Don\'t Tread On Me', 25.99, 'design images/u8271597134_gadsden_flag_--sref_httpss.mj.run4uJjUI0-kCE_--v__9b3e51c6-3946-4dae-90db-3f8715ffa1e8_2.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_The_Libertarian_Porcupine_--sref_httpss.mj.runRRy_2ef49c6a-a675-4f73-b8f3-c37e77bbcbec_1.png" alt="Libertarian Porcupine" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Libertarian Porcupine</div>
+                    <div class="photo-description">The peaceful yet defensive symbol of the libertarian movement</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$25.99</div>
+                    <button class="buy-btn" onclick="addToCart('Libertarian Porcupine', 25.99, 'design images/u8271597134_The_Libertarian_Porcupine_--sref_httpss.mj.runRRy_2ef49c6a-a675-4f73-b8f3-c37e77bbcbec_1.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_statue_of_liberty_--sref_httpss.mj.run6OYY9jUT9S8_95acdb60-7ae3-43e4-b9ae-08eee3e32d45_0.png" alt="Statue of Liberty" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Lady Liberty</div>
+                    <div class="photo-description">Symbol of freedom and liberty for all</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$24.99</div>
+                    <button class="buy-btn" onclick="addToCart('Lady Liberty', 24.99, 'design images/u8271597134_statue_of_liberty_--sref_httpss.mj.run6OYY9jUT9S8_95acdb60-7ae3-43e4-b9ae-08eee3e32d45_0.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_Joshua_Tree_National_Park_--sref_httpss.mj.runwHO_96aeae5c-1c45-401f-8adb-e9acb944ee2e_3.png" alt="Joshua Tree National Park" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Joshua Tree</div>
+                    <div class="photo-description">Iconic California desert landscape and national park</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$23.99</div>
+                    <button class="buy-btn" onclick="addToCart('Joshua Tree', 23.99, 'design images/u8271597134_Joshua_Tree_National_Park_--sref_httpss.mj.runwHO_96aeae5c-1c45-401f-8adb-e9acb944ee2e_3.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_Yellowstone_National_Park_--sref_httpss.mj.runcrS_0de36862-fc0e-4a83-8d6e-086aae38d5a0_0.png" alt="Yellowstone National Park" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Yellowstone</div>
+                    <div class="photo-description">America's first national park - geysers and wilderness</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$23.99</div>
+                    <button class="buy-btn" onclick="addToCart('Yellowstone', 23.99, 'design images/u8271597134_Yellowstone_National_Park_--sref_httpss.mj.runcrS_0de36862-fc0e-4a83-8d6e-086aae38d5a0_0.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_Carlsbad_Caverns_--sref_httpss.mj.run-8KtznXzEJs__a7ffff0b-cdcb-4c08-b6fb-601b40a59edf_3.png" alt="Carlsbad Caverns" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Carlsbad Caverns</div>
+                    <div class="photo-description">Underground wonder of New Mexico</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$23.99</div>
+                    <button class="buy-btn" onclick="addToCart('Carlsbad Caverns', 23.99, 'design images/u8271597134_Carlsbad_Caverns_--sref_httpss.mj.run-8KtznXzEJs__a7ffff0b-cdcb-4c08-b6fb-601b40a59edf_3.png', this)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="photo-card">
+                <img src="design images/u8271597134_make_an_image_for_the_redwood_forest_--sref_https_21ff687e-42f1-4fef-9af2-d10be23c2fbe_0.png" alt="Redwood Forest" style="width:100%;display:block;">
+                <div class="photo-caption">
+                    <div class="photo-title">Redwood Forest</div>
+                    <div class="photo-description">Majestic giants of the California coast</div>
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Size:</label>
+                            <select class="size-select">
+                                <option value="S">Small</option>
+                                <option value="M" selected>Medium</option>
+                                <option value="L">Large</option>
+                                <option value="XL">X-Large</option>
+                                <option value="XXL">XX-Large</option>
+                            </select>
+                        </div>
+                        <div class="option-group">
+                            <label>Color:</label>
+                            <select class="color-select">
+                                <option value="black" selected>Black</option>
+                                <option value="navy">Navy</option>
+                                <option value="charcoal">Charcoal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-price">$23.99</div>
+                    <button class="buy-btn" onclick="addToCart('Redwood Forest', 23.99, 'design images/u8271597134_make_an_image_for_the_redwood_forest_--sref_https_21ff687e-42f1-4fef-9af2-d10be23c2fbe_0.png', this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ripped-edge"></div>
+
+    <section id="about" class="content-section">
+        <h2>About JDD</h2>
+        <div class="about-content">
+            <p class="band-bio">Justin Davis Designs (JDD) is a creative t-shirt brand dedicated to wearable art. Each piece is crafted with passion, blending bold graphics and quality materials for a look that stands out. Founded by Justin Davis, JDD is about self-expression, confidence, and style.</p>
+        </div>
+    </section>
+    <div class="ripped-edge"></div>
+    <section id="contact" class="content-section">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <form class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input class="form-input" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-input" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea class="form-textarea" id="message" name="message" placeholder="Ask about custom orders, collaborations, or just say hi!" required></textarea>
+                    </div>
+                </div>
+                <button class="submit-btn" type="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>For business inquiries and collaborations:</p>
+                <p><a href="mailto:info@jddesigns.ink" class="contact-email">info@jddesigns.ink</a></p>
+                <p>We typically respond within 24-48 hours. Let's create something amazing together!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3 class="cart-title">Shopping Cart</h3>
+                <button class="cart-close" onclick="toggleCart()">✕</button>
+            </div>
+            <div id="cartItems"></div>
+            <div class="cart-total" id="cartTotal" style="display: none;">
+                <div class="cart-total-amount">Total: $<span id="totalAmount">0.00</span></div>
+                <button class="checkout-btn" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Justin Davis Designs. All rights reserved. Wear your art. | jddesigns.ink</p>
+    </footer>
+    <script>
+        // Shopping Cart functionality
+        let cart = JSON.parse(localStorage.getItem('jdd-cart')) || [];
+
+        function updateCartDisplay() {
+            const cartCount = document.getElementById('cartCount');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            cartCount.style.display = totalItems > 0 ? 'flex' : 'none';
+        }
+
+        function addToCart(name, price, image, button) {
+            const card = button.closest('.photo-card');
+            const size = card.querySelector('.size-select').value;
+            const color = card.querySelector('.color-select').value;
+            
+            const itemId = `${name}-${size}-${color}`;
+            const existingItem = cart.find(item => item.id === itemId);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: itemId,
+                    name: name,
+                    price: price,
+                    image: image,
+                    size: size,
+                    color: color,
+                    quantity: 1
+                });
+            }
+            
+            localStorage.setItem('jdd-cart', JSON.stringify(cart));
+            updateCartDisplay();
+            
+            // Button feedback
+            const originalText = button.textContent;
+            button.textContent = 'Added!';
+            button.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+            }, 2000);
+        }
+
+        function toggleCart() {
+            const modal = document.getElementById('cartModal');
+            if (modal.style.display === 'flex') {
+                modal.style.display = 'none';
+            } else {
+                modal.style.display = 'flex';
+                renderCart();
+            }
+        }
+
+        function renderCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            const totalAmount = document.getElementById('totalAmount');
+            
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<div class="cart-empty">Your cart is empty</div>';
+                cartTotal.style.display = 'none';
+                return;
+            }
+            
+            cartTotal.style.display = 'block';
+            let total = 0;
+            
+            cartItems.innerHTML = cart.map(item => {
+                total += item.price * item.quantity;
+                return `
+                    <div class="cart-item">
+                        <img src="${item.image}" alt="${item.name}">
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-details">${item.size} • ${item.color}</div>
+                            <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                        </div>
+                        <div class="cart-quantity">
+                            <button class="qty-btn" onclick="changeQuantity('${item.id}', -1)">-</button>
+                            <span>${item.quantity}</span>
+                            <button class="qty-btn" onclick="changeQuantity('${item.id}', 1)">+</button>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            totalAmount.textContent = total.toFixed(2);
+        }
+
+        function changeQuantity(itemId, change) {
+            const item = cart.find(item => item.id === itemId);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(item => item.id !== itemId);
+                }
+                localStorage.setItem('jdd-cart', JSON.stringify(cart));
+                updateCartDisplay();
+                renderCart();
+            }
+        }
+
+        function checkout() {
+            if (cart.length === 0) return;
+            
+            const cartContent = document.querySelector('.cart-content');
+            const cartItems = document.getElementById('cartItems');
+            const cartTotal = document.getElementById('cartTotal');
+            
+            cartContent.classList.add('checkout-mode');
+            
+            // Hide cart items and total
+            cartItems.style.display = 'none';
+            cartTotal.style.display = 'none';
+            
+            // Convert YouTube Shorts URL to embeddable format
+            const youtubeUrl = 'https://www.youtube.com/embed/vnJs7ODTvNU?autoplay=1';
+            
+            // Create checkout content with video
+            const checkoutContent = document.createElement('div');
+            checkoutContent.innerHTML = `
+                <div class="video-message">Your order is being processed...</div>
+                <div class="video-container">
+                    <iframe src="${youtubeUrl}" 
+                            title="Checkout Video" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-message">Thank you for supporting JDD!</div>
+                <button class="checkout-btn" onclick="completeCheckout()" style="background: linear-gradient(45deg, #4CAF50, #45a049);">
+                    Complete Order
+                </button>
+            `;
+            
+            cartItems.parentNode.insertBefore(checkoutContent, cartTotal);
+        }
+
+        function completeCheckout() {
+            // Clear cart
+            cart = [];
+            localStorage.setItem('jdd-cart', JSON.stringify(cart));
+            updateCartDisplay();
+            
+            // Close cart modal
+            toggleCart();
+            
+            // Reset cart content
+            const cartContent = document.querySelector('.cart-content');
+            cartContent.classList.remove('checkout-mode');
+            
+            // Remove checkout content
+            const checkoutContent = cartContent.querySelector('div:not(#cartItems):not(#cartTotal):not(.cart-header)');
+            if (checkoutContent) {
+                checkoutContent.remove();
+            }
+            
+            // Show cart items and total again
+            document.getElementById('cartItems').style.display = 'block';
+            document.getElementById('cartTotal').style.display = 'block';
+            
+            // Show success message
+            alert('Order completed! Thank you for your purchase from JDD!');
+        }
+
+        // Sticky navigation functionality
+        function handleStickyNav() {
+            const nav = document.querySelector('nav');
+            const header = document.querySelector('header');
+            const headerHeight = header.offsetHeight;
+            
+            if (window.scrollY > headerHeight - 100) {
+                nav.classList.add('sticky');
+            } else {
+                nav.classList.remove('sticky');
+            }
+        }
+
+        // Initialize cart display on load
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartDisplay();
+            
+            // Add scroll listener for sticky nav
+            window.addEventListener('scroll', handleStickyNav);
+            
+            // Contact form handling with validation
+            const form = document.querySelector('.contact-form');
+            if (form) {
+                // Add real-time validation
+                const inputs = form.querySelectorAll('.form-input, .form-textarea');
+                inputs.forEach(input => {
+                    input.addEventListener('blur', validateField);
+                    input.addEventListener('input', clearError);
+                });
+
+                form.addEventListener('submit', async (e) => {
+                    e.preventDefault();
+                    
+                    if (!validateForm()) {
+                        return;
+                    }
+                    
+                    const submitBtn = document.querySelector('.submit-btn');
+                    const originalText = submitBtn.textContent;
+                    const formData = new FormData(form);
+                    
+                    try {
+                        submitBtn.textContent = 'Sending...';
+                        submitBtn.style.background = 'linear-gradient(45deg, #666, #555)';
+                        submitBtn.disabled = true;
+                        
+                        // Simulate API call - replace with actual endpoint
+                        await new Promise(resolve => setTimeout(resolve, 1500));
+                        
+                        // In a real implementation, this would be:
+                        // const response = await fetch('/api/contact', {
+                        //     method: 'POST',
+                        //     body: formData
+                        // });
+                        
+                        submitBtn.textContent = 'Message Sent!';
+                        submitBtn.style.background = 'linear-gradient(45deg, #4CAF50, #45a049)';
+                        
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.style.background = '';
+                            submitBtn.disabled = false;
+                            form.reset();
+                            clearAllErrors();
+                        }, 3000);
+                        
+                    } catch (error) {
+                        submitBtn.textContent = 'Error - Try Again';
+                        submitBtn.style.background = 'linear-gradient(45deg, #ff4444, #cc0000)';
+                        setTimeout(() => {
+                            submitBtn.textContent = originalText;
+                            submitBtn.style.background = '';
+                            submitBtn.disabled = false;
+                        }, 3000);
+                    }
+                });
+            }
+            
+            function validateField(e) {
+                const field = e.target;
+                const value = field.value.trim();
+                clearError(field);
+                
+                if (field.hasAttribute('required') && !value) {
+                    showError(field, 'This field is required');
+                    return false;
+                }
+                
+                if (field.type === 'email' && value && !isValidEmail(value)) {
+                    showError(field, 'Please enter a valid email address');
+                    return false;
+                }
+                
+                if (field.name === 'message' && value && value.length < 10) {
+                    showError(field, 'Message must be at least 10 characters');
+                    return false;
+                }
+                
+                return true;
+            }
+            
+            function validateForm() {
+                const fields = document.querySelectorAll('.form-input[required], .form-textarea[required]');
+                let isValid = true;
+                
+                fields.forEach(field => {
+                    if (!validateField({ target: field })) {
+                        isValid = false;
+                    }
+                });
+                
+                return isValid;
+            }
+            
+            function showError(field, message) {
+                const errorEl = document.createElement('div');
+                errorEl.className = 'field-error';
+                errorEl.textContent = message;
+                errorEl.style.color = '#ff6b6b';
+                errorEl.style.fontSize = '0.8rem';
+                errorEl.style.marginTop = '0.25rem';
+                
+                field.style.borderColor = '#ff6b6b';
+                field.parentNode.appendChild(errorEl);
+            }
+            
+            function clearError(field) {
+                if (typeof field === 'object' && field.target) {
+                    field = field.target;
+                }
+                
+                const existingError = field.parentNode.querySelector('.field-error');
+                if (existingError) {
+                    existingError.remove();
+                }
+                field.style.borderColor = '';
+            }
+            
+            function clearAllErrors() {
+                document.querySelectorAll('.field-error').forEach(error => error.remove());
+                document.querySelectorAll('.form-input, .form-textarea').forEach(field => {
+                    field.style.borderColor = '';
+                });
+            }
+            
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+            
+            // Smooth scrolling for nav links
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Close cart when clicking outside
+            document.getElementById('cartModal').addEventListener('click', (e) => {
+                if (e.target === e.currentTarget) {
+                    toggleCart();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
